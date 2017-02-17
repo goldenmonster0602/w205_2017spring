@@ -1,5 +1,7 @@
-ave my current directory
-MY_DIR=$(pwd)
+!/bin/bash
+
+# save my current directory
+MY_CWD=$(pwd)
 
 # creating staging directories
 mkdir ~/staging 
@@ -20,9 +22,24 @@ unzip medicare_data.zip
 MY_FILE="Hospital General Information.csv"
 NEW_FILE="hospitals.csv"
 
-tail -n +2 "OLD_FILE">$NEW_FILE
+MY_FILE2="Timely and Effective Care - Hospital.csv"
+NEW_FILE2="effective_care.csv"
 
-# to be 4 more files
+MY_FILE3="Readmissions and Deaths - Hospital.csv"
+NEW_FILE3="readmissions.csv"
+
+MY_FILE4="Measure Dates.csv"
+NEW_FILE4="Measures.csv"
+
+MY_FILE5="hvbp_hcahps_05_28_2015.csv"
+NEW_FILE5="surveys_responses.csv"
+
+tail -n +2 "$MY_FILE">$NEW_FILE
+tail -n +2 "$MY_FILE2">$NEW_FILE2
+tail -n +2 "$MY_FILE3">$NEW_FILE3
+tail -n +2 "$MY_FILE4">$NEW_FILE4
+tail -n +2 "$MY_FILE5">$NEW_FILE5
+
 
 #create our gifs directory
 
@@ -30,12 +47,16 @@ hdfs dfs -mkdir /user/w205/hostpital_compare
 
 # copy the file to hfs
 
-# to be 4 more files
-
 hdfs dfs -put $NEW_FILE /user/w205/hospital_compare
+hdfs dfs -put $NEW_FILE2 /user/w205/hospital_compare
+hdfs dfs -put $NEW_FILE3 /user/w205/hospital_compare
+hdfs dfs -put $NEW_FILE4 /user/w205/hospital_compare
+hdfs dfs -put $NEW_FILE5 /user/w205/hospital_compare
 
 # change directory back to original
 
 cd $MY_CWD
 
 exit
+
+
