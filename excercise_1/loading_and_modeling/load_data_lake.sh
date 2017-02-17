@@ -31,7 +31,7 @@ NEW_FILE3="readmissions.csv"
 MY_FILE4="Measure Dates.csv"
 NEW_FILE4="Measures.csv"
 
-MY_FILE5="hvbp_hcahps_05_28_2015.csv"
+MY_FILE5="hvbp_hcahps_11_10_2016.csv"
 NEW_FILE5="surveys_responses.csv"
 
 tail -n +2 "$MY_FILE">$NEW_FILE
