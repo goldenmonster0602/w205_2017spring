@@ -8,21 +8,24 @@ rm ~/staging/exercise_1/*
 rmdir ~/staging/exercise_1
 rmdir ~/staging 
 
-# remove files from hfs
-hdfs dfs -rm /user/w205/hospital_compare/hospitals.csv
-hdfs dfs -rm /user/w205/hospital_compare/effective_care.csv
-hdfs dfs -rm /user/w205/hospital_compare/readmissions.csv
-hdfs dfs -rm /user/w205/hospital_compare/Measures.csv
-hdfs dfs -rm /user/w205/hospital_compare/surveys_responses.csv
+# remove files from hdfs
+hdfs dfs -rm /user/w205/hospital_compare_new/hospitals/hospitals.csv
+hdfs dfs -rm /user/w205/hospital_compare_new/effective_care/effective_care.csv
+hdfs dfs -rm /user/w205/hospital_compare_new/readmissions/readmissions.csv
+hdfs dfs -rm /user/w205/hospital_compare_new/Measures/Measures.csv
+hdfs dfs -rm /user/w205/hospital_compare_new/surveys_responses/surveys_responses.csv
 
-#remove our hdfs directory
+#remove our hdfs directories
 
-hdfs dfs -rmdir /user/w205/hostpital_compare
-
+hdfs dfs -rmdir /user/w205/hospital_compare_new/hospitals
+hdfs dfs -rmdir /user/w205/hospital_compare_new/effective_care
+hdfs dfs -rmdir /user/w205/hospital_compare_new/readmissions
+hdfs dfs -rmdir /user/w205/hospital_compare_new/Measures
+hdfs dfs -rmdir /user/w205/hospital_compare_new/surveys_responses
+hdfs dfs -rmdir /user/w205/hospital_compare_new
 
 # change directory back to original
 
 cd $MY_CWD
 
 exit
-
