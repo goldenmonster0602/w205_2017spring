@@ -14,6 +14,7 @@ DROP TABLE effective_transform;
 create table effective_transform as 
 select
     provider_id,
+    hospital_name,
     condition, 
     measure_id, 
     cast(score as float) score
@@ -27,6 +28,7 @@ create table readmission_transform as
 select
     provider_id,
     measure_name, 
+    hospital_name,
     measure_id, 
     compared_to_national,
     cast(score as float) score
@@ -38,6 +40,7 @@ DROP TABLE survey_transform;
 create table survey_transform as 
 select
     provider_number,
+    hospital_name,
     cast(communication_with_nurses_performance_rate as float) nurses_performance_rate,
     cast(communication_with_doctors_performance_rate as float) doctors_performance_rate,
     cast(responsiveness_of_hospital_staff_performance_rate as float) staff_performance_rate,
@@ -50,4 +53,3 @@ select
 from surveys_responses
 where communication_with_nurses_performance_rate not like 'Not%'  AND communication_with_doctors_performance_rate not like 'Not%' AND responsiveness_of_hospital_staff_performance_rate not like 'Not%' AND  pain_management_performance_rate not like 'Not%'  AND communication_about_medicines_performance_rate not like 'Not%'  AND cleanliness_and_quietness_of_hospital_environment_performance_rate not like 'Not%'  AND overall_rating_of_hospital_performance_rate not like 'Not%'  AND hcahps_base_score not like 'Not%'  AND hcahps_consistency_score not like 'Not%' 
 ;
-
