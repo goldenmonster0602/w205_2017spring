@@ -1,0 +1,33 @@
+The procedures have the greatest variability among hospitals:
+
+Timely and Effective care:
+
+ED_1b   103.9772874660485                                                       
+ED_2b	64.61623086138776
+OP_18b	43.15691957172668
+OP_3b	32.40961509657893
+OP_31	29.2661343094838
+OP_29	24.50305252578068
+OP_2	2   1.4550923478395
+OP_23	19.92578053825412
+OP_30	19.27928592661989
+OP_20	18.218145009983544
+
+Readmission care:
+MORT_30_PN   2.095929284860384                                               
+MORT_30_STK	1.6637068925923573
+READM_30_HF	1.4960663071771694
+MORT_30_HF	1.4615888344655508
+READM_30_PN	1.4316707465841207
+READM_30_COPD	1.2686870173249758
+MORT_30_AMI	1.2497300030869634
+READM_30_CABG	1.1268047100636394
+MORT_30_COPD	1.11268109196571
+READM_30_STK	1.0710419938535165
+
+
+In order to determine the greatest variability among procedures and hospitals, i used both measure_id and score from the timely and effective care, as well as the readmission care file and analyzed them separately. Based on the measurement of each procedure, the benchmark and threshold they used to determine the score for each procedure varies from one to another. For example, for the PC-01, the threshold is 3.125 and the benchmark is 0, which means the best preforming procedure is when the score is 0, one the other hand ED_1b or ED_2b is the average time patients spend in the emergency room before or after they have ben admitted as inpatients. So it makes more sense to exam each procedure based on their definition and measurement.
+
+I used the standard deviation of score as measurement and group by the measure_id to determine the procedure with the highest variability. For the timely and effective care, the top two selected procedure belong to the ER department, ED_1b and ED_2b.  ED_1b is the average time patients spent in the emergency department, before they were admitted to the hospital as an inpatient. ED_2b is the average time patients spent in the emergency department, after the doctor decided to admit them as an inpatient.  I think the data makes sense that there is a great variability between each ER visit and the time patients need to spend in the ER in each hospital. 
+
+For the readmission procedure variables, Death rate for pneumonia patients and Death rate for stroke patients, it makes more sense considering both pneumonia and stroke conditions have great variability. 

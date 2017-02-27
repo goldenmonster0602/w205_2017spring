@@ -1,0 +1,16 @@
+Top 10 best hospitals:
+
+520196	OAKLEAF SURGICAL HOSPITAL	 100.0
+190255	PARK PLACE SURGICAL HOSPITAL	100.0
+180149	T J HEALTH COLUMBIA	100.0
+360352	SURGICAL HOSPITAL AT SOUTHWOODS	100.0
+170190	MANHATTAN SURGICAL HOSPITAL LLC	100.0
+390325	OSS ORTHOPAEDIC HOSPITAL	100.0
+050697	PATIENTS' HOSPITAL OF REDDING	100.0
+670076	BAYLOR SCOTT AND WHITE SURGICAL HOSPITAL AT SHERMA  100.0
+450864	TEXAS SPINE AND JOINT HOSPITAL	100.0
+390316	SURGICAL INSTITUTE OF READING	100.0
+
+There are many datasets and method to determine which hospitals have the best quality service and have the most consistently high score for a variety of procedures. The whole purpose of this investigation is to understand how to change outcomes for the Medicare patients. Starting in October 2012, Medicare began rewarding hospitals that provide high-quality care for their patients through the new Hospital Value-Based Purchasing (VBP) Program.  The VBP program is based on 30% of patient experience of care, and 70% of clinical process of care.  Patient experience of care is based on the combination of hcahps_base_score and hcahps_consistency_score. So I used the hcahps_base_score and hcahps_consistency_score to answer this question.  The HCAHPS (Hospital Consumer Assessment of Healthcare Providers and Systems) is the first national, standardized, publicly reported survey of patients' perspectives of hospital care.  The Patient Experience of Care Domain score is comprised of two parts: the HCAHPS Base Score (maximum of 80 points) and the HCAHPS Consistency Points score (maximum of 20 points). 
+
+The 10 hospitals shown above all have the full score of 100 points, which qualifies as one of the best hospitals that offer quality care to patients. Note that the these 10 hospitals are not the only hospitals that score 100 points. 

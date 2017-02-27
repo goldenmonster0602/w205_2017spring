@@ -1,0 +1,6 @@
+Hospital ratings and patients survey correlation:
+
+0.5248532704340672
+
+Based on the hcahps patients satisfaction scoring, I used the following measurement to determine the patients survey responses: Communication with Nurses, Communication with Doctors, Staff Responsiveness, Pain Management, Communication about Medicines, and Discharge Information, the hospital Cleanliness and Quietness combined with the hcahps consistency score.  After using correlation function on the patients survey responses and the hospital overall rating, 0.5248 was scored. The score indicated a positive relationship between the two variables. I think it makes more sense when looking at the measurement and factors included in these two rating systems.   Hospital overall ratings include several factors such as safety of care, readmission, mortality, patients experience, and their comparison with the national wide average.  The hcahps base and consistency score were based on series of survey responses from patients on their overall satisfactory of each hospital and each procedure. A higher nationally rated hospital with overall high rating should be expected to have high score on the the patients survey responses. 
+

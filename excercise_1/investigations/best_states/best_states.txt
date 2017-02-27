@@ -1,0 +1,29 @@
+Best state
+
+Using hospital overall rating:
+
+SD	3.857142857142857                                                       
+DE	3.6666666666666665
+WI	3.611111111111111
+MN	3.5316455696202533
+ID	3.526315789473684
+IN	3.4814814814814814
+NH	3.48
+CO	3.450980392156863
+UT	3.4482758620689653
+ME	3.4375
+
+Using hcahps base and consistency score rating:
+
+SD   	54.2                                                                    
+LA	53.52777777777778
+WI	50.30769230769231
+KS	49.20454545454545
+IN	45.68354430379747
+NE	44.916666666666664
+AL	44.54929577464789
+MN	44.319148936170215
+ME	43.8235294117647
+OK	43.67164179104478
+
+In order to find which states are models of high quality care, I used both the hospital overall rating from the hospital general information, and the hcahps scores from the survey responses.  Hospital overall ratings include several factors such as safety of care, readmission, mortality, patients experience, and their comparison with the national wide average.  The hcahps base and consistency score were based on series of survey responses from patients on their overall satisfactory of each hospital and each procedure. I think it would be interesting to look at both ratings. Based on the results, SD or South Dakota has the best quality care nation wide.  IN, MN, and ME were selected as top 10 on both rating scales. 
