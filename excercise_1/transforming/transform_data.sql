@@ -41,6 +41,7 @@ create table survey_transform as
 select
     provider_number,
     hospital_name,
+    state,
     cast(communication_with_nurses_performance_rate as float) nurses_performance_rate,
     cast(communication_with_doctors_performance_rate as float) doctors_performance_rate,
     cast(responsiveness_of_hospital_staff_performance_rate as float) staff_performance_rate,
